@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -18,7 +19,7 @@
             <a class="navigation-link current-page" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <a class="navigation-logo" href="#"><img class="logo" src="#" alt="Логотип"></a>
+        <a class="navigation-logo" href="index.html"><img class="logo" src="img/logos/small-logo.svg" width="138" height="70" alt="Логотип"></a>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
@@ -151,7 +152,7 @@
       <p class="filter-result">НАЙДЕНО ГОСТИНИЦ: 38</p>
       <ul class="hotel-list">
         <li class="hotel-card">
-          <img class="hotel-card-image" src="" alt="Amara Resort & Spa">
+          <img class="hotel-card-image" src="img/catalog/amara.jpg" width="180" height="120" alt="Amara Resort & Spa">
           <h3 class="hotel-card-title">Amara Resort & Spa</h3>
           <span class="hotel-type">Гостиница</span>
           <span class="hotel-price">От 4000 ₽</span>
@@ -161,7 +162,7 @@
           <p class="rating">РЕЙТИНГ: 8,5</p>
         </li>
         <li class="hotel-card">
-          <img class="hotel-card-image" src="" alt="Desert Quail Inn">
+          <img class="hotel-card-image" src="img/catalog/desert.jpg" width="180" height="120" alt="Desert Quail Inn">
           <h3 class="hotel-card-title">Desert Quail Inn</h3>
           <span class="hotel-type">Мотель</span>
           <span class="hotel-price">От 3000 ₽</span>
@@ -171,7 +172,7 @@
           <p class="rating">РЕЙТИНГ: 8,9</p>
         </li>
         <li class="hotel-card">
-          <img class="hotel-card-image" src="" alt="Villas at Poco Diablo">
+          <img class="hotel-card-image" src="img/catalog/poco-diablo.jpg" width="180" height="120" alt="Villas at Poco Diablo">
           <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
           <span class="hotel-type">Апартаменты</span>
           <span class="hotel-price">От 2000 ₽</span>
@@ -181,7 +182,7 @@
           <p class="rating">РЕЙТИНГ: 9,2</p>
         </li>
         <li class="hotel-card">
-          <img class="hotel-card-image" src="" alt="GreenTree Inn">
+          <img class="hotel-card-image" src="img/catalog/greentree.jpg" width="180" height="120" alt="GreenTree Inn">
           <h3 class="hotel-card-title">GreenTree Inn</h3>
           <span class="hotel-type">Гостиница</span>
           <span class="hotel-price">От 3000 ₽</span>
@@ -219,14 +220,13 @@
           <option value="10">10</option>
         </select>        
       </form>
-      <section class="subscription">
-        <h2 class="visually-hidden">Подписка</h2>        
-        <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label for="email-field">
-        <b class="subscription-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</b>
+      <section class="subscription-catalog">
+        <h2 class="subscription-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
         <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        </label>
-          <input type="text" name="email" id="email-field" placeholder="Ваш e-mail">
+        <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="subscription-field-label">
+            <input class="subscription-field" type="text" name="email" id="email-field" placeholder="Ваш e-mail">
+          </label>
           <button class="button subscription-button" type="submit">ПОДПИСАТЬСЯ</button>
         </form>
       </section>
