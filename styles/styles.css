@@ -12,7 +12,14 @@
   font-weight: 700;
   font-display: swap;
 }
+html{
+  height: 100%;
+}
 body {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 18px;
@@ -21,16 +28,14 @@ body {
   color: #333333;
   background-color: #ffffff;
 }
-.subscription {
-  background-image: url(/img/background/background-subscribe.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: #83b3d3;
-}
-.main-inner {
-  background-image: url(/img/background/catalog-background-top.jpg);
-  background-repeat: no-repeat;
+
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin:  0 auto;
+  width: 1200px;
 }
 .main-index {
   background-image: url(/img/background/logo-background.jpg);
@@ -41,6 +46,20 @@ body {
   color: #000000;
   background-color: #ffffff;
 }
+/*стилизацая меню*/
+.navigation{
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.navigation-list{
+  margin: 0;
+  padding: 0;
+}
+.navigation-logo{
+  align-self: center;
+}
 .navigation-link {
   font-size: 20px;
   font-weight: 700;
@@ -48,6 +67,15 @@ body {
   text-align: center;
   text-decoration: none;
   color: inherit;
+}
+.navigation-links{
+  margin-left: 71px;
+  width: 420px;
+}
+.navigation-user{
+  margin-right: 72px;
+  margin-left: 0 auto;
+  width: 420px;
 }
 .navigation-item-current-page {
   text-decoration: underline;
@@ -60,6 +88,11 @@ body {
   text-align: center;
   color: #ffffff;
   background-color: #756257;
+}
+
+.logo-big{
+  display: block;
+  margin: 0 auto;
 }
 .promo {
   font-weight: 700;
@@ -78,6 +111,34 @@ body {
   text-align: center;
 }
 /* список преимуществ */
+.advantages{
+  flex-grow: 1;
+  width: 1200px;
+}
+.advantages-list{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+.advantages-items-details{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.advantage-with-img{
+  display: flex;
+  flex-wrap: wrap;
+}
+.advantages-text-block{
+  width: 400px;
+}
+.advantages-item-details{
+  width: 400px;
+}
 .bckg-lighter-blue {
   background-color: rgba(131, 179, 211, 0.12);
 }
@@ -126,7 +187,13 @@ body {
   text-transform: uppercase;
 }
 /*секция поиска*/
+.hotel-search{
+  width: 1200px;
+}
 .hotel-search-title {
+  width: 720px;
+  margin-bottom: 15px;
+  margin-left: 240px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -134,10 +201,15 @@ body {
   color: #000000;
 }
 .hotel-search-description {
+  width: 720px;
+  margin-bottom: 73px;
+  margin-left: 240px;
   font-size: 22px;
   line-height: 26px;
 }
 .hotel-search-button {
+  width: 575px;
+  margin-bottom: 91px;  
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -145,7 +217,20 @@ body {
   background-color: #756257;
 }
 /*подписка*/
-.subscription-title {
+.subscription {
+  width: 1200px;
+  height: 411px;
+  margin: 0;
+  padding: 0;
+  background-image: url(/img/background/background-subscribe.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #83b3d3;
+}
+.subscription-title {  
+  width: 720px;
+  margin-left: 240px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -153,11 +238,14 @@ body {
   color: #ffffff;
 }
 .subscription-description {
+  width: 720px;
+  margin-left: 240px;
   font-size: 22px;
   line-height: 26px;
   color: #ffffff;
 }
 .subscription-button {
+  width: 200px;  
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -165,8 +253,23 @@ body {
   background-color: #83b3d3;
 }
 .subscription-field {
+  width: 600px;  
   line-height: 26px;
   background-color: #f2f2f2;
+}
+/*footer*/
+.footer-container{
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+.footer-social-list{
+  width: 120px;  
+}
+.footer-contacts-address{
+  width: 720px;
+  text-align: center;
+  font-style: normal;
 }
 /*контакты*/
 .footer-contacts-address-phone {
@@ -176,6 +279,18 @@ body {
   color: #000000;
 }
 /*работа с катологом*/
+
+.catalog-container{
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
+}
+.main-inner {
+  background-image: url(/img/background/catalog-background-top.jpg);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
 .inner-header-title {
   font-weight: 700;
   font-size: 60px;
@@ -186,6 +301,24 @@ body {
 .breadcrumbs {
   font-size: 16px;
   color: #ffffff;
+}
+.catalog-filter{
+  display: flex;
+  margin: 0 auto;
+  width: 1057px;
+  padding: 0;
+}
+.catalog-filter-group-infrastructure{
+  width: 150px;
+  margin-right: 67px;
+}
+.catalog-filter-group-type-house{
+  width: 145px;
+  margin-right: 167px;
+}
+.catalog-filter-group-price{
+  width: 287px;
+  margin-right: 81px;
 }
 .catalog-hotels {
   color: #ffffff;
