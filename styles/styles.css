@@ -1,14 +1,14 @@
 @font-face {
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
   font-family: "PT Sans";
 }
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
-  src: url("/fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-weight: 700;
   font-display: swap;
 }
@@ -98,7 +98,7 @@ body {
 .navigation-item.navigation-item-current-page::after {
   content:"";
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 12px;
   width: calc(100% - 22px);
   border-bottom: solid 2px #756257;
@@ -187,7 +187,7 @@ body {
   color: #756257;
   fill: #756257;
 }
-.navigation-link:focus{
+.navigation-link:focus-visible{
   border-color: #83B3D3;
   color: #756257;
   fill: #756257;
@@ -222,7 +222,7 @@ body {
   text-transform: uppercase;
   color: #000000;
   margin-top: 0;
-  margin-bottom: 32px;
+  margin-bottom: 34px;
 }
 .promo-five-reason {
   font-size: 22px;
@@ -291,7 +291,7 @@ background-color: rgba(131, 179, 211, 0.2);
   box-sizing: border-box;
   max-width: 400px;
   min-height: 384px;
-  padding-top: 98px;
+  padding-top: 96px;
   padding-bottom: 20px;
   padding-left: 85px;
   padding-right: 85px;
@@ -360,7 +360,7 @@ background-color: rgba(131, 179, 211, 0.2);
   text-transform: uppercase;
   padding-top: 23px;
   margin-top: 0;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 }
 .advantages-item-details-description{
   margin: 0;
@@ -377,13 +377,13 @@ background-color: rgba(131, 179, 211, 0.2);
 }
 /*секция поиска*/
 .hotel-search{
-  padding-top: 89px;
+  padding-top: 87px;
   
 }
 .hotel-search-title {
   max-width: 720px;  
   margin: 0 auto;
-  margin-bottom: 31px;  
+  margin-bottom: 30px;  
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -393,7 +393,7 @@ background-color: rgba(131, 179, 211, 0.2);
 .hotel-search-description {
   max-width: 720px;
   margin: 0 auto;
-  margin-bottom: 57px;  
+  margin-bottom: 59px;  
   font-size: 22px;
   line-height: 26px;
 }
@@ -421,8 +421,7 @@ background-color: rgba(131, 179, 211, 0.2);
   background-position: center;
   background-size: cover;
   background-color: #83b3d3;
-  padding-top: 94px;
-  padding-bottom: 93px;
+  padding: 93px 0;
 }
 .subscription-title {  
   max-width: 720px;  
@@ -440,7 +439,7 @@ background-color: rgba(131, 179, 211, 0.2);
   line-height: 26px;
   color: #ffffff;
   margin: 0 auto;
-  margin-bottom: 43px;
+  margin-bottom: 46px;
 }  
 .subscription-form{
   display: flex;
@@ -463,7 +462,7 @@ background-color: rgba(131, 179, 211, 0.2);
 .subscription-button:hover{
   background-color: #68A2CA;
 }
-.subscription-button:focus{
+.subscription-button:focus-visible{
   box-shadow: inset 0 0 0 3px #756257;
 }
 .subscription-field {
@@ -476,11 +475,20 @@ background-color: rgba(131, 179, 211, 0.2);
   border: none;
   border-radius: 10px 0 0 10px;
 }
+.subscription-field::placeholder{
+  font-family: "Pt sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 26px;
+  padding-left: 22px;
+}
 /*footer*/
 .page-footer{
   flex: 0 0 auto;
-  padding: 0 72px;
-  padding-top: 33px;
+  padding-left: 61px;
+  padding-right: 62px;
+  padding-top: 24px;
   padding-bottom: 29px;
 }
 .footer-container{
@@ -495,11 +503,11 @@ background-color: rgba(131, 179, 211, 0.2);
   flex-direction: row;
   align-items: center;
   list-style: none;
-  padding: 0;
+  padding: 0;  
   margin-right: auto;
 }
-.footer-social-item{
-  margin-right: 29px;
+.footer-social-item + .footer-social-item{
+  margin-left: 4px;
 }
 .footer-contacts-address{
   max-width: 720px;
@@ -517,7 +525,9 @@ background-color: rgba(131, 179, 211, 0.2);
   box-sizing: border-box;
   padding: 15px;
   border-radius: 10px;
-  outline: none;
+  outline: none;  
+  margin-top: -8px;
+  margin-right: -7px;
 }
 .htmlacademy-link{
   outline: none;
@@ -965,7 +975,7 @@ background-position: center;
 .button:hover{
   background-color: #615048;
 }
-.button:focus{
+.button:focus-visible{
   box-shadow: inset 0 0 0 3px #83b3d3;
   background-color: #615048;
 
@@ -977,7 +987,7 @@ background-position: center;
   border:none;
   color: rgba(255, 255, 255, 0.3);
 }
-.display-search-result-item>.button:focus,
+.display-search-result-item>.button:focus-visible,
 .display-search-result-item>.button:hover{
   box-shadow: none;
   box-shadow: inset 0 0 0 2px #83B3D3;
@@ -996,12 +1006,12 @@ background-position: center;
 .in-favorites:hover{
   background-color: #6C9E42;
 }
-.pagination-link:focus{
+.pagination-link:focus-visible{
   box-shadow: inset 0 0 0 3px #756257;
   background-color: #68A2CA;
 }
-.show-more:focus,
-.add-to-favorites-button:focus{
+.show-more:focus-visible,
+.add-to-favorites-button:focus-visible{
   box-shadow: inset 0 0 0 3px #756257;
   background-color: #68A2CA;
 }
@@ -1010,7 +1020,7 @@ background-position: center;
 }
 .pagination-current:hover,
 .pagination-current:active,
-.pagination-current:focus{
+.pagination-current:focus-visible{
   background-color: #f2f2f2;
   color: #000000;
   border: none;
@@ -1018,13 +1028,13 @@ background-position: center;
 }
 .pagination-separator:hover,
 .pagination-separator:active,
-.pagination-separator:focus{
+.pagination-separator:focus-visible{
   background-color: #83b3d3;
   color: #ffffff;
   border: none;
   outline: none;
 }
-.apply-button:focus{
+.apply-button:focus-visible{
   box-shadow: inset 0 0 0 3px #ffffff;
   background-color: #68A2CA;
 }
@@ -1036,21 +1046,21 @@ background-position: center;
   background: none;
   color:rgba(255, 255, 255, 0.3);
 }
-.reset-button:focus{
+.reset-button:focus-visible{
   box-shadow: none;
   background: none;
 }
 .button-text{
   padding: 3px 8px;
 }
-.reset-button:focus>.button-text{
+.reset-button:focus-visible>.button-text{
   border-radius: 4px;
   box-shadow: inset 0 0 0 3px #83b3d3;
 }
 .in-favorites:hover{
   background-color: #6C9E42;
 }
-.in-favorites:focus{
+.in-favorites:focus-visible{
   background-color: #6C9E42;
 }
 .in-favorites:active{
@@ -1069,7 +1079,7 @@ background-position: center;
   opacity: 0.6;
 }
 
-.breadcrumbs-link:focus{
+.breadcrumbs-link:focus-visible{
   border-radius: 4px;
   box-shadow: inset 0 0 0 3px #83b3d3;
 }
@@ -1079,7 +1089,7 @@ background-position: center;
 .breadcrumbs-hotels-link:hover{
   opacity: 0.6;
 }
-.breadcrumbs-hotels-link:focus{
+.breadcrumbs-hotels-link:focus-visible{
   border-radius: 4px;
   box-shadow: inset 0 0 0 3px #83b3d3;
 }
@@ -1089,12 +1099,13 @@ background-position: center;
 .hotel-image-container{
   margin-right: 34px;
   border: solid 3px transparent;
+  outline: none;
 
 }
 .hotel-image-container:hover{
   opacity: 0.6;
 }
-.hotel-image-container:focus{
+.hotel-image-container:focus-visible{
   opacity: 1;
   border-color: #83B3D3;
 }
@@ -1103,12 +1114,12 @@ background-position: center;
   opacity: 0.3;
   border-color: transparent;
 }
-.subscription-button:focus{
+.subscription-button:focus-visible{
   box-shadow: inset 0 0 0 3px #756257;
   background-color: #68A2CA;
 }
 .subscription-button:active{
-  box-shadow:none
+  box-shadow:none;
   background-color: #68A2CA;
 }
 .apply-button:active{
@@ -1117,7 +1128,7 @@ background-position: center;
 .hotel-card-title:hover{
   color: #756257;
 }
-.hotel-card-title:focus{
+.hotel-card-title:focus-visible{
   box-shadow:inset 0 0 0 3px #83B3D3 ;
   color: #756257;
 }
@@ -1126,7 +1137,7 @@ background-position: center;
 }
 .social-button{
   border-radius: 10px;
-  padding: 10px;
+  padding: 9px;
   width: 40px;
   height: 40px;
   box-sizing: border-box;
@@ -1135,20 +1146,20 @@ background-position: center;
   fill:#83B3D3;
 }
 .social-button:hover,
-.social-button:focus,
+.social-button:focus-visible,
 .social-button:active{
   background: none;
 }
 .social-button:hover>.social-icon{
   fill:#68A2CA;
 }
-.social-button:focus{
+.social-button:focus-visible{
   box-shadow: inset 0 0 0 3px #83B3D3;
 }
 .footer-contacts-address-phone:hover{
   color: #756257;
 }
-.footer-contacts-address-phone:focus{
+.footer-contacts-address-phone:focus-visible{
   box-shadow: inset 0 0 0 3px #83B3D3;
 }
 .footer-contacts-address-phone:active{
@@ -1157,11 +1168,11 @@ background-position: center;
 }
 
 .htmlacademy-link:hover>.htmlacademy-icon,
-.htmlacademy-link:focus>.htmlacademy-icon,
+.htmlacademy-link:focus-visible>.htmlacademy-icon,
 .htmlacademy-link:active>.htmlacademy-icon{
   fill:#756257;
 }
-.htmlacademy-link:focus{
+.htmlacademy-link:focus-visible{
   box-shadow: inset 0 0 0 3px #83B3D3;
 }
 .htmlacademy-link:active>.htmlacademy-icon{
