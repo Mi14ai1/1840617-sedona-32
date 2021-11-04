@@ -124,16 +124,14 @@ body {
   margin-left: 9px;
 }
 .navigation-item {
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 12px;
+  padding-bottom: 16px;
   margin-left: -12px;
 }
 .navigation-user {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-.navigation-user-item {
   margin-top: -4px;
 }
 .navigation-user-search {
@@ -170,7 +168,7 @@ body {
 
 .open-favorites {
   width: 160px;
-  height: 37px;
+  min-height: 37px;
   padding: 10px 16px;
   background-color: #756257;
   color: #ffffff;
@@ -197,7 +195,7 @@ body {
 
 .logo-big-container {
   box-sizing: border-box;
-  height: 485px;
+  min-height: 485px;
   padding-top: 50px;
   background: url(../img/background/divider.svg) 50% 100% no-repeat,
     url(../img/background/index-background.jpg) no-repeat;
@@ -240,6 +238,7 @@ body {
   text-decoration: none;
   border: none;
   outline: none;
+  padding: 10px;
 }
 .open-favorites-button:hover {
   background-color: #615048;
@@ -285,6 +284,7 @@ body {
 }
 .img-street {
   grid-column: 2/4;
+  align-self: center;
 }
 .advantages-text-block {
   flex: 1 0 auto;
@@ -319,7 +319,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   margin-top: 0;
-  margin-bottom: 28px;
+  margin-bottom: 31px;
 }
 .advantages-items-details-icon {
   position: absolute;
@@ -328,17 +328,17 @@ body {
 }
 .advantages-items-details-icon.house {
   width: 76px;
-  height: 72px;
-  top: 90px;
+  min-height: 72px;
+  top: 87px;
 }
 .advantages-items-details-icon.food {
-  height: 74px;
-  height: 70px;
+  width: 74px;
+  min-height: 70px;
   top: 92px;
 }
 .advantages-items-details-icon.souvenir {
   width: 64px;
-  height: 76px;
+  min-height: 76px;
   top: 86px;
 }
 
@@ -358,7 +358,7 @@ body {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
-  padding-top: 23px;
+  padding-top: 22px;
   margin-top: 0;
   margin-bottom: 20px;
 }
@@ -374,9 +374,9 @@ body {
 .advantages-description {
   margin: 0 auto;
 }
-/*секция поиска*/
+
 .hotel-search {
-  padding-top: 87px;
+  padding-top: 86px;
 }
 .hotel-search-title {
   max-width: 720px;
@@ -407,12 +407,12 @@ body {
   background-color: #756257;
   border-radius: 10px;
   width: 575px;
-  height: 60px;
+  min-height: 60px;
 }
 .hotel-search-button:hover {
   background-color: #615048;
 }
-/*подписка*/
+
 .subscription {
   background-image: url(../img/background/background-subscribe.jpg);
   background-repeat: no-repeat;
@@ -452,7 +452,7 @@ body {
   color: #ffffff;
   background-color: #83b3d3;
   margin: 0;
-  padding: 0;
+  padding: 10px;
   border: none;
   border-radius: 0 10px 10px 0;
   cursor: pointer;
@@ -518,6 +518,7 @@ body {
   align-items: center;
   list-style: none;
   padding: 0;
+  padding-top: 2px;
   margin-right: auto;
 }
 .footer-social-item + .footer-social-item {
@@ -533,15 +534,16 @@ body {
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
-  white-space: nowrap;
+  white-space: pre-wrap;
   color: #000000;
   text-decoration: none;
   box-sizing: border-box;
   padding: 15px;
+  padding-top: 20px;
   border-radius: 10px;
   outline: none;
-  margin-top: -8px;
   margin-right: -7px;
+  padding-top: 7px;
 }
 .htmlacademy-link {
   outline: none;
@@ -549,16 +551,16 @@ body {
   border-radius: 10px;
   margin-left: auto;
 }
-/*работа с катологом*/
 
 .filters-container {
   background-image: url(../img/background/catalog-background-top.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #e5e5e5;
-  height: 408px;
+  min-height: 408px;
   padding-top: 32px;
   box-sizing: border-box;
+  padding-bottom: 50px;
 }
 .filters-container-title {
   font-weight: 700;
@@ -614,11 +616,9 @@ body {
   margin: 0;
   border: none;
 }
-.catalog-filter-list {
-  padding-left: 1px;
-}
+
 .catalog-filter-item + .catalog-filter-item {
-  margin-top: 12px;
+  margin-top: 14px;
 }
 .catalog-filter-group-infrastructure {
   margin-right: 68px;
@@ -628,11 +628,9 @@ body {
 }
 .control-checkbox {
   position: relative;
-  padding-left: 40px;
 }
 .control-radio {
   position: relative;
-  padding-left: 40px;
 }
 
 .control-radio-mark {
@@ -709,7 +707,7 @@ body {
   color: #ffffff;
   background-color: #83b3d3;
   width: 160px;
-  height: 48px;
+  min-height: 48px;
   border-radius: 4px;
   cursor: pointer;
   margin-bottom: 7px;
@@ -722,7 +720,7 @@ body {
   outline: none;
   background-color: transparent;
   width: 160px;
-  height: 48px;
+  min-height: 48px;
   border-radius: 4px;
   text-transform: none;
 }
@@ -748,15 +746,15 @@ body {
 .catalog-filter-input[type="number"]::placeholder {
   color: transparent;
 }
-input#max-price {
+.price-range-container .max-price {
   border-radius: 0 4px 4px 0;
 }
-input#min-price {
+.price-range-container .min-price {
   border-radius: 4px 0 0 4px;
   padding-left: 17px;
   border-right-color: transparent;
 }
-input#min-price:focus-visible {
+.price-range-container .min-price:focus-visible {
   border-right-color: #ffffff;
   z-index: 1;
 }
@@ -775,6 +773,7 @@ input#min-price:focus-visible {
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-left: 1px;
 }
 .price-range-container {
   position: relative;
@@ -864,10 +863,13 @@ input#min-price:focus-visible {
   color: #ffffff;
   padding: 0;
   margin: 0;
-  margin-bottom: 31px;
+  margin-bottom: 32px;
 }
 .control-label {
+  display: inline-block;
   line-height: 23px;
+  padding-left: 40px;
+  padding-right: 20px;
 }
 
 .filter-result {
@@ -878,6 +880,7 @@ input#min-price:focus-visible {
   line-height: 39px;
   text-transform: uppercase;
   color: #000000;
+  padding-right: 20px;
 }
 
 .display-search-result {
@@ -931,7 +934,7 @@ input#min-price:focus-visible {
   border-radius: 4px;
   border: solid 2px rgba(229, 229, 229, 1);
   padding-left: 16px;
-  padding-right: 35px;
+  padding-right: 50px;
   padding-bottom: 2px;
   outline: none;
   background-image: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='.3' clip-path='url(%23a)'%3E%3Cpath d='m6.6 6.7 5.1-5.3c.3-.3.3-.9 0-1.2-.3-.3-.9-.3-1.2 0L6 4.9 1.5.2C1.2-.1.6-.1.3.2.1.3 0 .6 0 .8c0 .2.1.4.3.6l5.1 5.3c.3.4.9.4 1.2 0Z' fill='%23000'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h12v7H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
@@ -987,7 +990,7 @@ input#min-price:focus-visible {
   vertical-align: middle;
 }
 
-.hotel-card-raiting-container {
+.hotel-card-rating-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1012,34 +1015,28 @@ input#min-price:focus-visible {
 .hotel-type,
 .hotel-price {
   line-height: 23px;
+  padding-right: 20px;
 }
-
-.hotel-detail-button {
-  font-weight: 700;
-  font-size: 16px;
-  color: #ffffff;
-  background-color: #756257;
-  width: 151px;
-  height: 37px;
-  line-height: 37px;
-  border-radius: 4px;
-  cursor: pointer;
-}
+.hotel-detail-button,
 .add-to-favorites-button {
   font-weight: 700;
   font-size: 16px;
   color: #ffffff;
+  line-height: 18px;
+  border-radius: 4px;
+}
+.hotel-detail-button {
+  background-color: #756257;
+  width: 151px;
+}
+.add-to-favorites-button {
   background-color: #83b3d3;
   width: 160px;
-  height: 37px;
-  line-height: 37px;
-  border-radius: 4px;
-  cursor: pointer;
 }
 .in-favorites {
   background-color: #7db54f;
 }
-/*Звезды*/
+
 .two-stars {
   width: 160px;
   height: 17px;
@@ -1068,9 +1065,12 @@ input#min-price:focus-visible {
   text-transform: uppercase;
   width: 160px;
   margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-top: 9px;
   padding-bottom: 10px;
   border-radius: 4px;
+  box-sizing: border-box;
 }
 .show-more-container {
   border-bottom: solid 1px #e6e6e6;
@@ -1092,13 +1092,16 @@ input#min-price:focus-visible {
 }
 .pagination-container {
   display: flex;
-  padding-top: 30px;
+  padding-top: 21px;
   padding-bottom: 57px;
   align-items: center;
 }
 .pagination {
   display: flex;
   justify-content: flex-start;
+  align-items: baseline;
+  flex-wrap: wrap;
+  max-width: 370px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -1109,16 +1112,20 @@ input#min-price:focus-visible {
 }
 .pagination-item + .pagination-item {
   margin-left: 8px;
+  margin-top: 8px;
+}
+.pagination-item:nth-child(6n + 1) {
+  margin-left: 0;
 }
 .pagination-link {
   display: inline-block;
-  width: 55px;
-  height: 55px;
+  min-width: 55px;
+  min-height: 55px;
   border-radius: 4px;
   box-sizing: border-box;
   font-weight: 700;
   font-size: 20px;
-  line-height: 55px;
+  line-height: 30px;
   color: #ffffff;
   background-color: #83b3d3;
   text-align: center;
@@ -1126,6 +1133,7 @@ input#min-price:focus-visible {
   text-decoration: none;
   cursor: pointer;
   outline: none;
+  padding: 10px;
 }
 .pagination-current {
   border-radius: 4px;
@@ -1154,8 +1162,9 @@ input#min-price:focus-visible {
   color: #333333;
   border-radius: 4px;
   border: solid 2px rgba(229, 229, 229, 1);
-  padding-left: 16px;
-  padding-right: 35px;
+  padding-top: 7px;
+  padding-left: 14px;
+  padding-right: 50px;
   padding-bottom: 2px;
   outline: none;
   background-image: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='.3' clip-path='url(%23a)'%3E%3Cpath d='m6.6 6.7 5.1-5.3c.3-.3.3-.9 0-1.2-.3-.3-.9-.3-1.2 0L6 4.9 1.5.2C1.2-.1.6-.1.3.2.1.3 0 .6 0 .8c0 .2.1.4.3.6l5.1 5.3c.3.4.9.4 1.2 0Z' fill='%23000'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h12v7H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
@@ -1173,7 +1182,7 @@ input#min-price:focus-visible {
 }
 .subscription-catalog {
   padding-top: 28px;
-  padding-bottom: 135px;
+  padding-bottom: 138px;
 }
 .subscription-catalog-title {
   font-weight: 700;
@@ -1192,7 +1201,7 @@ input#min-price:focus-visible {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 46px;
 }
 .subscription-catalog-form-container {
   display: flex;
@@ -1201,7 +1210,7 @@ input#min-price:focus-visible {
 
 .subscription-button {
   max-width: 200px;
-  height: 60px;
+  min-height: 60px;
   cursor: pointer;
 }
 .content-container {
@@ -1239,6 +1248,9 @@ input#min-price:focus-visible {
 }
 .in-favorites:hover {
   background-color: #6c9e42;
+}
+.pagination-current{
+  pointer-events: none;
 }
 .pagination-link:focus-visible {
   box-shadow: inset 0 0 0 3px #756257;
@@ -1498,7 +1510,7 @@ input#min-price:focus-visible {
   margin: 0;
   border-radius: 0 0 20px 20px;
   width: 100%;
-  height: 60px;
+  min-height: 60px;
   line-height: 60px;
   color: #ffffff;
 }
@@ -1548,9 +1560,15 @@ input#min-price:focus-visible {
   margin: 0;
   padding: 0;
 }
+.popover-text {
+  max-width: 210px;
+}
 .popover-text p {
   margin: 0;
   padding: 0;
+}
+.popover {
+  display: none;
 }
 .modal-container {
   position: fixed;
@@ -1649,6 +1667,8 @@ input#min-price:focus-visible {
   font-style: normal;
   font-weight: 700;
   text-align: start;
+  padding-right: 10px;
+  padding-top: 2px;
 }
 .field {
   box-sizing: border-box;
@@ -1751,12 +1771,12 @@ input#min-price:focus-visible {
   position: absolute;
   width: 256px;
   box-sizing: border-box;
-  top: 31px;
+  top: 39px;
   left: 50%;
   margin-left: -128px;
   background-color: #333333;
   color: #ffffff;
-  padding: 15px 13px 18px 15px;
+  padding: 23px 10px 22px 23px;
   border-radius: 6px;
   z-index: 1;
   opacity: 0;
@@ -1796,6 +1816,11 @@ input#min-price:focus-visible {
   background-color: #e6e6e6;
   box-shadow: inset 0 0 0 3px #83b3d3;
 }
+.field-search-day:not(:placeholder-shown) {
+  background-color: #ffffff;
+  box-shadow: inset 0 0 0 3px #000000;
+  color: #000000;
+}
 .field-search-day-active {
   background-color: #ffffff;
   box-shadow: inset 0 0 0 3px #000000;
@@ -1815,7 +1840,7 @@ input#min-price:focus-visible {
 }
 .search-submit {
   width: 575px;
-  height: 60px;
+  min-height: 60px;
   border-radius: 10px;
   background-color: #83b3d3;
   color: #ffffff;
@@ -1840,7 +1865,7 @@ input#min-price:focus-visible {
   position: relative;
   text-align: end;
   padding-right: 54px;
-  padding-top: 2px;
+  padding-top: 3px;
 }
 .info {
   position: absolute;
@@ -1852,4 +1877,7 @@ input#min-price:focus-visible {
   padding: 0;
   top: 12px;
   right: 19px;
+}
+.modal-container {
+  display: none;
 }
