@@ -1264,7 +1264,7 @@ body {
   outline: none;
 }
 
-.pagination-item+.pagination-item {
+.pagination-item + .pagination-item {
   margin-left: 8px;
 }
 
@@ -1389,14 +1389,14 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.display-search-result-item>.button:focus-visible,
-.display-search-result-item>.button:hover {
+.display-search-result-item > .button:focus-visible,
+.display-search-result-item > .button:hover {
   box-shadow: none;
   box-shadow: inset 0 0 0 2px #83b3d3;
   background-color: transparent;
 }
 
-.display-search-result-item>.button:active {
+.display-search-result-item > .button:active {
   box-shadow: inset 0 0 0 2px #000000;
 }
 
@@ -1465,7 +1465,7 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.reset-button:active>.button-text {
+.reset-button:active > .button-text {
   box-shadow: none;
 }
 
@@ -1480,7 +1480,7 @@ body {
   padding: 3px 8px;
 }
 
-.reset-button:focus-visible>.button-text {
+.reset-button:focus-visible > .button-text {
   border-radius: 4px;
   box-shadow: inset 0 0 0 3px #83b3d3;
 }
@@ -1599,7 +1599,7 @@ body {
   background: none;
 }
 
-.social-button:hover>.social-icon {
+.social-button:hover > .social-icon {
   fill: #68a2ca;
 }
 
@@ -1620,9 +1620,9 @@ body {
   color: rgba(117, 98, 87, 0.3);
 }
 
-.htmlacademy-link:hover>.htmlacademy-icon,
-.htmlacademy-link:focus-visible>.htmlacademy-icon,
-.htmlacademy-link:active>.htmlacademy-icon {
+.htmlacademy-link:hover > .htmlacademy-icon,
+.htmlacademy-link:focus-visible > .htmlacademy-icon,
+.htmlacademy-link:active > .htmlacademy-icon {
   fill: #756257;
 }
 
@@ -1630,7 +1630,7 @@ body {
   box-shadow: inset 0 0 0 3px #83b3d3;
 }
 
-.htmlacademy-link:active>.htmlacademy-icon {
+.htmlacademy-link:active > .htmlacademy-icon {
   opacity: 0.3;
 }
 
@@ -1826,7 +1826,7 @@ body {
   cursor: pointer;
 }
 
-.modal-close-button>svg {
+.modal-close-button > svg {
   fill: #000000;
   position: absolute;
   left: 50%;
@@ -1847,7 +1847,7 @@ body {
   border-color: transparent;
 }
 
-.modal-close-button:active>svg {
+.modal-close-button:active > svg {
   opacity: 0.3;
 }
 
@@ -1867,7 +1867,7 @@ body {
   grid-column: 2/-1;
 }
 
-.calendar-input-container>.field-search-day {
+.calendar-input-container > .field-search-day {
   width: 420px;
 }
 
