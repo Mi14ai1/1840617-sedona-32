@@ -840,6 +840,7 @@ body {
   outline: none;
   padding-left: 16px;
   padding-right: 32px;
+  -moz-appearance: textfield;
 }
 
 .catalog-filter-input[type="number"]::placeholder {
